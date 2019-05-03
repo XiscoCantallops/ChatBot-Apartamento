@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>No tengo respuesta para esto</template>
+  </category>
+
+<!-- HOLA -->
+  
+<category>
+<pattern>HOLA</pattern>
+<template>Hola! ¿Cómo te puedo ayudar? </template>
+</category>
+
+<category>
+<pattern>BUENAS</pattern>
+<template><srai>HOLA</srai></template>
+</category>
+
+<category>
+<pattern>BUENAS DIAS</pattern>
+<template><srai>HOLA</srai></template>
+</category>
+
+<category>
+<pattern>BUENAS TARDES</pattern>
+<template><srai>HOLA</srai></template>
+</category>
+
+<!-- ADIÓS -->
+  
+<category>
+<pattern>ADIÓS</pattern>
+<template>Adiós! Espero haberte ayudado </template>
+</category>
+
+<category>
+<pattern>ADIOS</pattern>
+<template>Adiós! Espero haberte ayudado </template>
+</category>
+
+<category>
+<pattern>BYE</pattern>
+<template><srai>ADIÓS</srai></template>
+</category>
+
+<category>
+<pattern>HASTA OTRA</pattern>
+<template><srai>ADIÓS</srai></template>
+</category>
+
+
+<!-- INDICACIONES -->
+
+<category>
+<pattern>QUE HACES</pattern>
+<template>Como asistente del apartamento turístico puedo:
+<ul>
+    <li>Dar Información sobre el apartamento</li>
+    <li>Recomendarte alguno monumentos para visitar</li>
+    <li>Dar Información sobre las playas más cercanas</li>
+</ul>
+</template>
+</category>
+
+<category><pattern>PARA QUE SIRVES</pattern><template><srai>QUE HACES</srai></template></category>
+<category><pattern>QUÉ HACES</pattern><template><srai>QUE HACES</srai></template></category>
+<category><pattern>QUE SABES HACER</pattern><template><srai>QUE HACES</srai></template></category>
+<category><pattern>QUÉ SABES HACES</pattern><template><srai>QUE HACES</srai></template></category>
+<!-- INFORMACIÓN APARTAMENTO -->
+
+<category>
+    <pattern>DÓNDE ESTÁ EL APARTAMENTO</pattern>
+    <template>El apartamento está en la calle Margarita Xirgu 42, Palma.
+<link>
+    <text>Aquí tienes un mapa</text>
+    <url>https://www.google.com/maps/place/Carrer+de+Margarida+Xirgu,+42,+07011+Palma,+Illes+Balears/@39.5834645,2.6333444,17z/data=!3m1!4b1!4m5!3m4!1s0x1297928bb300ed41:0xaa7cec86cb97174!8m2!3d39.5834645!4d2.6355331</url>
+</link></template>
+</category>
+
+<category><pattern>EN QUE ZONA ESTÁ UBICADO EL APARTAMENTO</pattern><template><srai>DÓNDE ESTÁ EL APARTAMENTO</srai></template></category>
+<category><pattern>EN QUE ZONA ESTÁ EL APARTAMENTO</pattern><template><srai>DÓNDE ESTÁ EL APARTAMENTO</srai></template></category>
+<category><pattern>DONDE ESTÁ EL APARTAMENTO</pattern><template><srai>DÓNDE ESTÁ EL APARTAMENTO</srai></template></category>
+<category><pattern>DONDE ESTA EL APARTAMENTO</pattern><template><srai>DÓNDE ESTÁ EL APARTAMENTO</srai></template></category>
+
+<category>
+    <pattern>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</pattern>
+    <template>Desde el Aeropuerto combinando la línea 1 con la 6 o la 8
+    <button>
+        <text>Pulsa aquí para más información</text>
+        <url>https://www.google.com/maps/dir/Aeropuerto+de+Palma+de+Mallorca,+07611+Palma,+Islas+Baleares/Carrer+de+Margarida+Xirgu,+42,+07011+Palma,+Illes+Balears/@39.563272,2.6506794,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1297942ff5db35f3:0x7031da6569b7f956!2m2!1d2.7361649!2d39.5517407!1m5!1m1!1s0x1297928bb300ed41:0xaa7cec86cb97174!2m2!1d2.6355331!2d39.5834645!3e3</url>
+    </button>
+    </template>
+</category>
+
+<category><pattern>COMO PUEDO LLEGAR AL APARTAMENTO</pattern><template><srai>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</srai></template></category>
+<category><pattern>COMO PUEDO LLEGAR</pattern><template><srai>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</srai></template></category>
+<category><pattern>CÓMO PUEDO LLEGAR</pattern><template><srai>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</srai></template></category>
+<category><pattern>CÓMO PUEDO LLEGAR AL APARTAMENTO</pattern><template><srai>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</srai></template></category>
+<category><pattern>CÓMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</pattern><template><srai>COMO PUEDO LLEGAR AL APARTAMENTO DESDE EL AEROPUERTO</srai></template></category>
+
+<!-- FOTOS APARTAMENTO -->
+
+<category>
+    <pattern>FOTOS</pattern>
+    <template>Claro!!!
+
+    <carousel>    
+    <card>
+        <image>https://media-cdn.tripadvisor.com/media/photo-s/0d/53/83/d7/foto-cama-habitacion.jpg</image>
+        <title>Dormitorio</title>
+    </card> 
+
+    <card>
+        <image>https://www.elmueble.com/medio/2018/06/26/salon-microcemento-mesa-de-centro_271826_61d06a55.jpg</image>
+        <title>Salón</title>
+    </card> 
+    
+    <card>
+        <image>https://www.tuandco.com/aprendeymejora/wp-content/uploads/2016/01/ducha-relax2-retallat.jpg</image>
+        <title>Baño</title>
+    </card> 
+    </carousel>
+    
+    </template>
+</category>
+
+<category>
+<pattern>_ FOTOS</pattern>
+<template><srai>FOTOS</srai></template>
+</category>
+
+<category>
+<pattern>FOTOS _</pattern>
+<template><srai>FOTOS</srai></template>
+</category>
+
+<category>
+<pattern>_ FOTOS *</pattern>
+<template><srai>FOTOS</srai></template>
+</category>
+
+
+<!-- OTROS -->
+
+
+<category>
+    <pattern>HAY WIFI</pattern>
+    <template>Por supuesto. Cuando llegue al apartamento le falicitaremos la clave.</template>
+</category>
+
+<category><pattern>Hay Internet en el Apartamento</pattern><template><srai>HAY WIFI</srai></template></category>
+
+<category>
+    <pattern>TIENES INFORMACIÓN DE LOS AUTOBUSES</pattern>
+    <template>Sí.
+<link>
+    <text>A qui tienes un mapa de las líneas</text>
+    <url>http://www.emtpalma.cat/ca/linies-horaris</url>
+</link></template>
+</category>
+
+<category><pattern>TIENES INFORMACION DE LOS AUTOBUSES</pattern><template><srai>TIENES INFORMACIOŃ DE LOS AUTOBUSES</srai></template></category>
+<category><pattern>TIENES UN MAPA DE LOS AUTOBUSES</pattern><template><srai>TIENES INFORMACIOŃ DE LOS AUTOBUSES</srai></template></category>
+
+<!-- INFORMACIÓN MONUMENTOS -->
+
+<category>
+    <pattern>_ MONUMENTOS #</pattern>
+    <template>Estos són los momumentos más importantes:
+    
+ <carousel>
+    <card>
+        <image>https://losviajesdeali.com/wp-content/uploads/2018/01/palma-de-mallorca-monumental-catedral-frente-puerto.jpg</image>
+        <title>Catedral</title>
+        <button>
+            <text>Más Infomación</text>
+            <url>https://es.wikipedia.org/wiki/Catedral_de_Santa_Mar%C3%ADa_de_Palma_de_Mallorca</url>
+            <postback></postback>
+        </button>
+    </card>
+    
+    <card>
+        <image>https://miviaje.com/wp-content/uploads/2016/08/shutterstock_361200416.jpg</image>
+        <title>Castell de Bellver</title>
+        <button>
+            <text>Más Infomación</text>
+            <url>https://castelldebellver.palma.cat/portal/PALMA/castelldebellver</url>
+            <postback></postback>
+        </button>
+    </card>
+    
+    <card>
+        <image>https://www.culturalpalma.com/media/culturalpalma/cache/26/42/26427aefd1ba4eba5de236935160a2b9.jpg</image>
+        <title>Lonja</title>
+        <button>
+            <text>Más Infomación</text>
+            <url>https://es.wikipedia.org/wiki/Lonja_de_Palma_de_Mallorca#Enlaces_externos</url>
+            <postback></postback>
+        </button>
+    </card>
+  </carousel>
+  
+ </template>
+</category>
+
+
+<!-- HORARIOS-->    
+
+<category>
+	<pattern>HORARIO<set>monumentos</set></pattern>
+	<template>El horario de <star/> es <map name="monumentos"><star/></map></template>
+</category>
+    
+<category>
+	<pattern># HORARIO #<set>monumentos</set></pattern>
+	<template>El horario de <star index="3"/> es <map name="monumentos"><star index="3"/></map></template>
+</category>
+
+
+    <category>
+        <pattern>QUE HORARIO TIENE</pattern>
+        <template>
+            <condition name="ella">
+                <li value="*"><srai># HORARIO # <get name="ella"/></srai></li>
+                <li>¿De qué monumento quieres saber el horario?</li>
+            </condition>
+        </template>
+    </category>
+
+<!-- INFORMACIÓN PLAYAS -->   
+
+<category>
+    <pattern>QUE PLAYAS VISITAR</pattern>
+    <template>Estos són los momumentos más importantes:
+    
+ <carousel>
+    <card>
+        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Es_Trenc%2C_Mallorca%2C_the_beach.jpg/1280px-Es_Trenc%2C_Mallorca%2C_the_beach.jpg</image>
+        <title>Es Trenc</title>
+        <button>
+            <text>Como llegar</text>
+            <url>https://www.google.com/maps/dir/Carrer+de+Margarida+Xirgu,+42,+Palma/Es+Trenc/@39.4686024,2.6914995,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1297928bb300ed41:0xaa7cec86cb97174!2m2!1d2.6355331!2d39.5834645!1m5!1m1!1s0x1297a921798e0b77:0x5d3dfd4c84e1c7f1!2m2!1d2.9845874!2d39.3445602!3e0</url>
+            <postback></postback>
+        </button>
+    </card>
+    
+    <card>
+        <image>https://web.archive.org/web/20110908062758im_/http://www.mallorcaworld.net/fotos/playa_mago2.jpg</image>
+        <title>Playa del Mago</title>
+        <button>
+            <text>Como llegar</text>
+            <url>https://www.google.com/maps/dir/Carrer+de+Margarida+Xirgu,+42,+Palma/Portals+Vells,+Islas+Baleares/@39.5285882,2.5055651,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1297928bb300ed41:0xaa7cec86cb97174!2m2!1d2.6355331!2d39.5834645!1m5!1m1!1s0x1297889647f9b467:0xe12fd339048063ed!2m2!1d2.519329!2d39.4733171!3e0</url>
+            <postback></postback>
+        </button>
+    </card>
+    
+    <card>
+        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Posta_de_Sol_Can_Pere_Antoni.JPG/1280px-Posta_de_Sol_Can_Pere_Antoni.JPG</image>
+        <title>Playa de Palma</title>
+        <button>
+            <text>>Como llegar</text>
+            <url>https://www.google.com/maps/dir/Carrer+de+Margarida+Xirgu,+42,+Palma/39.520278,2.739444/@39.5571011,2.6238601,12z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x1297928bb300ed41:0xaa7cec86cb97174!2m2!1d2.6355331!2d39.5834645!1m0!3e0?hl=es</url>
+            <postback></postback>
+        </button>
+    </card>
+  </carousel>
+  
+ </template>
+</category>
+
+
+<category><pattern>QUE PLAYAS ME RECOMIENDAS VISITAR</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+<category><pattern>QUÉ PLAYAS ME RECOMIENDAS VISITAR</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+<category><pattern>QUE PLAYAS ME RECOMIENDAS</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+<category><pattern>QUÉ PLAYAS ME RECOMIENDAS</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+<category><pattern>QUÉ PLAYAS VISITAR</pattern><template><srai>QUE VISITAR</srai></template></category>
+<category><pattern>QUE PLAYAS HAY CERCA</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+<category><pattern>QUÉ PLAYAS HAY CERCA</pattern><template><srai>QUE PLAYAS VISITAR</srai></template></category>
+
+
+<!-- PEDIR INFORMACIÓN PLAYAS -->  
+ <category>
+        <pattern># INFORMACIÓN _ *</pattern>
+        <template>
+            <think><set name="ella"><star index="3"/></set></think>
+            Aquí hay información sobre <formal><star index="3"/></formal>.
+            <button>
+                <text>Clica aquí</text>
+                <url>https://es.wikipedia.org/wiki/<star index="3"/></url>
+            </button>
+        </template>
+    </category>
+
+<category><pattern># INFORMACION _ *</pattern><template><srai># INFORMACIÓN _ *</srai></template></category>
+
+    <category>
+        <pattern># INFORMACIÓN SOBRE ELLA</pattern>
+        <template>
+            <condition name="ella">
+                <li value="*"><srai># INFORMACIÓN _ * <get name="ella"/></srai></li>
+                <li>¿Sobre que playa quieres informació?</li>
+            </condition>
+        </template>
+    </category>
+
+<category><pattern># INFORMACIÓN DE ELLA</pattern><template><srai># INFORMACIÓN SOBRE ELLA</srai></template></category>
+
+ <category>
+        <pattern># INFO *</pattern>
+        <template>
+            <think><set name="ella"><star index="2"/></set></think>
+            Aquí hay información sobre <formal><star index="2"/></formal>.
+            <button>
+                <text>Clica aquí</text>
+                <url>https://es.wikipedia.org/wiki/<star index="2"/></url>
+            </button>
+        </template>
+    </category>
+
+     <category>
+        <pattern>DAME MAS INFO SOBRE ELLA</pattern>
+        <template>
+            <condition name="ella">
+                <li value="*"><srai># INFO <get name="ella"/></srai></li>
+                <li>¿Sobre que playa quieres informació?</li>
+            </condition>
+        </template>
+    </category>
+    
+<!-- PEDIR EL TIEMPO PLAYAS -->      
+
+<category>
+        <pattern>QUE TIEMPO HACE EN *</pattern>
+        <template>
+            <think><set name="ella"><star/></set></think>
+            Espero que tengas un buen dia en <formal><star/></formal>.
+            <button>
+                <text>Ver el tiempo</text>
+                <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+            </button>
+        </template>
+    </category>   
+    
+    
+    <category>
+        <pattern>QUE TIEMPO HACE</pattern>
+        <template>
+            <condition name="ella">
+                <li value="*"><srai>QUE TIEMPO HACE EN <get name="ella"/></srai></li>
+                <li>¿De dónde quieres conocer el tiempo?</li>
+            </condition>
+        </template>
+    </category>
+    
+    
+    <category><pattern># TIEMPO *</pattern><template><srai>QUE TIEMPO HACE</srai></template></category>
+    
+<!-- COMO LLEGAR PLAYAS -->      
+
+<category>
+        <pattern>COMO LLEGAR A *</pattern>
+        <template>
+            <think><set name="ella"><star/></set></think>
+            Espero que tengas un buen viaje <formal><star/></formal>.
+            <button>
+                <text>Ver Ruta</text>
+                <url>https://www.google.com/maps/dir/<star/>/forecasts/latest</url>
+            </button>
+        </template>
+    </category>   
+    
+    
+    <category>
+        <pattern>COMO LLEGAR</pattern>
+        <template>
+            <condition name="ella">
+                <li value="*"><srai>COMO LLEGAR A <get name="ella"/></srai></li>
+                <li>¿Dónde quieres ir?</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category><pattern>COMO PUEDO LLEGAR</pattern><template><srai>COMO LLEGAR</srai></template></category>
+    <category><pattern>CÓMO PUEDO LLEGAR</pattern><template><srai>COMO LLEGAR</srai></template></category>
+    
+<!-- INFORMACIÓN CAPITALES -->   
+
+<category>
+	<pattern>CAPITAL DE <set>capitales</set></pattern>
+	<template>La Capital de <star/> es <map name="capitales"><star/></map></template>
+</category>
+
+<category>
+	<pattern>CAPITAL DE *</pattern>
+	<template><star/> No es una capital </template>
+</category>
+
+<category><pattern>CUAL ES LA CAPITAL DE <set>capitales</set></pattern><template><srai>CAPITAL DE <set>capitales</set></srai></template></category>
+
+<category>
+	<pattern>PROVINCIA DE <set>provincias</set></pattern>
+	<template> <star/> pertenece a <map name="provincias"><star/></map></template>
+</category>
+
+<category>
+	<pattern>PROVINCIA DE *</pattern>
+	<template><star/> no es una capital</template>
+</category>
+
+
+
+<category>
+	<pattern>A QUE PROVINCIA PERTENECE <set>provincias</set></pattern>
+	<template> <star/> Pertenece a <map name="provincias"><star/></map></template>
+</category>
+
+<category>
+	<pattern>A QUE PROVINCIA PERTENECE *</pattern>
+	<template><star/> no es una capital</template>
+</category>
+
+</aiml>
